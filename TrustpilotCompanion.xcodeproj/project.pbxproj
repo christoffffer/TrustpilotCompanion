@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		ED48CC8A2DF42DD000B9DFB4 /* TrustpilotCompanion Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ED48CC892DF42DD000B9DFB4 /* TrustpilotCompanion Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ED48CCB42DF43D4900B9DFB4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ED48CCB32DF43D3D00B9DFB4 /* .gitignore */; };
+		EDABE89A2DF5C8080073C985 /* bump_version.sh in Resources */ = {isa = PBXBuildFile; fileRef = EDABE8992DF5C8080073C985 /* bump_version.sh */; };
+		EDABE89B2DF5C8080073C985 /* bump_version.sh in Resources */ = {isa = PBXBuildFile; fileRef = EDABE8992DF5C8080073C985 /* bump_version.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		ED48CC7D2DF42DD000B9DFB4 /* TrustpilotCompanionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrustpilotCompanionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED48CC892DF42DD000B9DFB4 /* TrustpilotCompanion Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TrustpilotCompanion Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED48CCB32DF43D3D00B9DFB4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EDABE8992DF5C8080073C985 /* bump_version.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = bump_version.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -132,6 +135,7 @@
 		ED48CC4E2DF42DCF00B9DFB4 = {
 			isa = PBXGroup;
 			children = (
+				EDABE8992DF5C8080073C985 /* bump_version.sh */,
 				ED48CCB32DF43D3D00B9DFB4 /* .gitignore */,
 				ED48CC592DF42DCF00B9DFB4 /* TrustpilotCompanion */,
 				ED48CC762DF42DD000B9DFB4 /* TrustpilotCompanionTests */,
@@ -232,6 +236,7 @@
 				ED48CC852DF42DD000B9DFB4 /* Sources */,
 				ED48CC862DF42DD000B9DFB4 /* Frameworks */,
 				ED48CC872DF42DD000B9DFB4 /* Resources */,
+				EDABE89C2DF5CAB50073C985 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -300,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDABE89A2DF5C8080073C985 /* bump_version.sh in Resources */,
 				ED48CCB42DF43D4900B9DFB4 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,10 +328,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDABE89B2DF5C8080073C985 /* bump_version.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EDABE89C2DF5CAB50073C985 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${SRCROOT}/TrustpilotCompanion Extension/Scripts/bump_version.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED48CC532DF42DCF00B9DFB4 /* Sources */ = {
